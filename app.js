@@ -1,5 +1,3 @@
-import swal from 'sweetalert';
-
 // Define UI variables
 const form = document.querySelector("#task-form");
 const taskList = document.querySelector(".collection");
@@ -57,7 +55,7 @@ function getTasks() {
 // Add Task
 function addTask(e) {
     if (taskInput.value === "") {
-        swal("Add a task");
+        alert("Add a task");
     }
 
     // Create Li elements
